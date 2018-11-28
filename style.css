@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Muli', sans-serif;
+    color: black;
+    background-image: linear-gradient(to top, #17ff00 0%, #fbf500 100%);
+}
+
+.menu{
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #17ff00 0%, #fbf500 100%);
+    float: left;
+    position: fixed;
+
+}
+
+.game-set{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-title{
+    font-size: 3rem;
+}
+
+.game-set button {
+    display: block;
+    padding: 1rem;
+    width: 75%;
+    font-size: 1.5rem;
+    margin: 0.7rem;
+    border-radius: 5rem;
+    border: 2px solid black;
+    background: none;
+    outline: none;
+    color: black;
+    transition: 0.3s;
+}
+.game-set button:hover{
+    background-color: rgb(0, 0, 0);
+    color: #fbf500;
+}
+
+.board-container{
+    width: 80%;
+    float: right;
+    height: 100vh;
+}
+
+#board{
+    margin: 0;
+    padding: 0;
+}
+#board div {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #dce9ff;
+    background-color: #ffffff;
+    float: left;
+
+}
+
+#board div.live {
+    background-color: black;
+}
+
+#board {
+
+    min-height: 100px;
+    min-width: 100px
+}
